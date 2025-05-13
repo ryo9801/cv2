@@ -16,8 +16,8 @@ while True:
   m_c = 0
   w_c = 0
   w, h, _ = frame.shape
-  for i in range(1,w,1):
-    for j in range(1,h,1):
+  for i in range(1,w):
+    for j in range(1,h):
       b,g,r = frame[i,j]
     if r and g and  b >= 200:
       w_c = w_c + 1
